@@ -85,6 +85,7 @@ body{
     border: 4px solid #f89234;
     padding: 10px;
     color: #fff;
+    border-radius: 15px;
 }
 .clkSpan{
     display: inline-block;
@@ -92,4 +93,5 @@ body{
 .showDate{
     padding: 10px;
     background-color: #df5c10;
+    border-radius: 16px;
 }
