@@ -10,7 +10,7 @@ const secondsHand = document.querySelector('[data-seconds-hand]');
 const dateValue = dateValue1.getDate();
 const monthValue = dateValue1.getMonth();
 const yearValue = dateValue1.getFullYear();
-const monthValues = ['Jan', 'Feb', 'Mar', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+const monthValues = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 console.log(dateValue + ' ' + monthValues[monthValue] + ' ' + yearValue);
 document.getElementById("showDate").innerHTML = dateValue + ' ' + monthValues[monthValue] + ' ' + yearValue;
 
