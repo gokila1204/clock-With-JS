@@ -6,6 +6,7 @@
     <title>Digital Clock</title>
     <script type="text/javascript" defer src="script.js"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="/manifest.json">
 </head>
 <body>
     <div class="clock">
@@ -33,4 +34,15 @@
         <div id="sessionSpan" class="clkSpan"></div>
     </div>
 </body>
+<script>
+    if ('serviceWorker' in navigator) {
+       console.log("Will the service worker register?");
+       navigator.serviceWorker.register('service-worker.js')
+         .then(function(reg){
+           console.log("Yes, it did.");
+        }).catch(function(err) {
+           console.log("No it didn't. This happened:", err)
+       });
+    }
+   </script>
 </html>
